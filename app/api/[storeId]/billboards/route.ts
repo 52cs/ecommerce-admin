@@ -71,7 +71,7 @@ export async function GET(
       }
     });
 
-    return NextResponse.json(billboard);
+    return NextResponse.json(billboards);
   } catch (error) {
     console.log('[billboardS_GET]', error)
     return new NextResponse("Internal error", { status: 500 })
