@@ -15,7 +15,6 @@ const SizePage = async ({
   return (
     <div className="flex-col">
       <div className="flex-1 space-y-4 p-8 pt-6">
-        Existing Size: {size?.name}
         <SizeForm initialData={size} />
       </div>
     </div>

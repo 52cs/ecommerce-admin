@@ -5,7 +5,7 @@ import prismadb from "@/lib/prismadb";
 
 export async function POST(
   req: Request,
-  { params }: { params: { StoreId: string } }
+  { params }: { params: { storeId: string } }
 ) {
   try {
     const { userId } = auth();
@@ -95,7 +95,7 @@ export async function POST(
 
 export async function GET(
   req: Request,
-  { params }: { params: { StoreId: string } }
+  { params }: { params: { storeId: string } }
 ) {
   try {
     const { searchParams } = new URL(req.url)
